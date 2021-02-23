@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+## Cyndx React Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Your challenge is to complete building this single page application, a dog breed image viewer, using the React framework. When the application is complete, it will meet the following criteria:
 
-## Available Scripts
+- The application should display a list of dog breeds displaying 10 results at a time. If the breed is a family of sub breeds, there will be an item in the list for each sub breed.
 
-In the project directory, you can run:
+- There should be pagination controls that will display to the user the current page of results, the total number of pages of results, and previous/next buttons to change the current page of results.
 
-### `yarn start`
+- The user will be able to click on the name of a dog breed in the list and view a random picture of that dog breed. There will be a button to fetch another random image of the breed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The user interface will be customized so that the primary color is #4a90e2 and the secondary color is #e2844a.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Code should be written and optimized to the best of your ability.
 
-### `yarn test`
+## Helpful Links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following packages are installed to help build the app.
 
-### `yarn build`
+- Application Framework `react` [https://reactjs.org](https://reactjs.org)
+- UI Framework `material-ui` [https://material-ui.com](https://material-ui.com)
+- API Client `axios` [https://github.com/axios/axios](https://github.com/axios/axios)
+- Utilities Library `lodash` [https://lodash.com](https://lodash.com)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API Reference
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application uses the Dog API for data [https://dog.ceo/dog-api](https://dog.ceo/dog-api)

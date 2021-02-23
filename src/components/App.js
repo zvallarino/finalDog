@@ -7,14 +7,12 @@ import {
   createMuiTheme,
   useMediaQuery,
 } from '@material-ui/core';
-
 import { ThemeProvider } from "@material-ui/styles";
 
-import FetchBreeds from './components/FetchBreeds';
+import FetchBreeds from './FetchBreeds';
 
 function App() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-
   const theme = useMemo(() => createMuiTheme({
     palette: {
       type: prefersDarkMode ? 'dark' : 'light',
