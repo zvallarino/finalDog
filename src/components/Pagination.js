@@ -1,7 +1,7 @@
 import { Button, ButtonGroup } from '@material-ui/core';
 
 
-function Pagination({postsPerPage, totalPosts, paginate,leftArrowFunction,rightArrowFunction }){
+function Pagination({ postsPerPage, totalPosts, paginate,leftArrowFunction,rightArrowFunction }){
   const pageNumbers = [];
 
 

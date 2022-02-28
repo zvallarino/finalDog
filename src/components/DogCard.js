@@ -16,30 +16,25 @@ function DogCard({singleDog}) {
 
 
   useEffect(() => {
-    const fetchSingleImage = async () => {
-      setLoading(true);
-      const response = await axios.get(`https://dog.ceo/api/breed/${singleDog[0]}/images/random`);
-      setsingleImage(response.data.message)
-      setLoading(false);
-      } 
+
       fetchSingleImage();
     
   }, []);
 
+  const fetchSingleImage = async () => {
+    setLoading(true);
+    const response = await axios.get(`https://dog.ceo/api/breed/${singleDog[0]}/images/random`);
+    setsingleImage(response.data.message)
+    setLoading(false);
+    } 
+
   function RandomPhoto(){
-    const fetchSingleImage = async () => {
-      setLoadingRandom(true);
-      const response = await axios.get(`https://dog.ceo/api/breed/${singleDog[0]}/images/random`);
-      setsingleImage(response.data.message)
-      setLoadingRandom(false);
-      } 
-      fetchSingleImage();
+    fetchSingleImage()
   }
 
 
   function handleClick (e){
     setOnClick(dogs =>!dogs)
-    console.log("firing")
   }
 
   function subBreedHandle(){
@@ -54,7 +49,6 @@ function DogCard({singleDog}) {
           variant = "h3">
           {breed}
         </Typography>
-  
    )
   }
 
