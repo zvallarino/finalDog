@@ -1,35 +1,37 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { capitalize, trim } from 'lodash';
-import {
-  Container,
-  Typography,
-  ButtonGroup,
-  Button,
-  Box,
-  List,
-  ListItem,
-  ListItemText,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
-} from '@material-ui/core';
+// import React, { useState } from 'react';
+// import PropTypes from 'prop-types';
+// import { capitalize, trim } from 'lodash';
+// import {
+//   Container,
+//   Typography,
+//   ButtonGroup,
+//   Button,
+//   Box,
+//   List,
+//   ListItem,
+//   ListItemText,
+//   Dialog,
+//   DialogTitle,
+//   DialogContent,
+//   DialogActions,
+// } from '@material-ui/core';
 
-import BreedImage from './BreedImage';
-import { useFetchBreedImage } from './FetchImage';
+// import BreedImage from './BreedImage';
+// import { useFetchBreedImage } from './FetchImage';
 
 
-function DisplayBreeds({ breeds }) {
-  const [page, setPage] = useState(1);
-  const [breed, setBreed] = useState({ breed: null, subbreed: null });
-  const [image, loading, error, setImage] = useFetchBreedImage();
+function DisplayBreeds({ breeds, allBreeds }) {
+  // const [page, setPage] = useState(1);
+  // const [breed, setBreed] = useState({ breed: null, subbreed: null });
+  // const [image, loading, error, setImage] = useFetchBreedImage();
 
-  const totalPages = 1;
+  // const totalPages = 1;
+
+  // console.log(allBreeds)
 
   return (
-    <Box style={{ marginTop: 50 }}>
-      <Container maxWidth="sm" style={{ textAlign: 'center' }}>
+    // <Box style={{ marginTop: 50 }}>
+      {/* <Container maxWidth="sm" style={{ textAlign: 'center' }}>
         <Typography gutterBottom color="textPrimary">Page {page} of {totalPages}</Typography>
         <ButtonGroup variant="contained" color="primary">
           <Button onClick={() => null}>
@@ -40,7 +42,7 @@ function DisplayBreeds({ breeds }) {
           </Button>
         </ButtonGroup>
         <List>
-          {breeds.map(item => (
+          {allBreeds.current.map(item => (
             <ListItem 
               button
               key={`${item.breed}${item.subbreed}`}
@@ -78,19 +80,20 @@ function DisplayBreeds({ breeds }) {
             Close
           </Button>
         </DialogActions>
-      </Dialog>
+      </Dialog> */}
 
-    </Box>
+    // </Box>
+ 
   );
 }
 
-DisplayBreeds.propTypes = {
-  breeds: PropTypes.arrayOf(
-    PropTypes.exact({
-      breed: PropTypes.string.isRequired,
-      subbreed: PropTypes.string
-    })
-  ).isRequired,
-};
+// DisplayBreeds.propTypes = {
+//   breeds: PropTypes.arrayOf(
+//     PropTypes.exact({
+//       breed: PropTypes.string.isRequired,
+//       subbreed: PropTypes.string
+//     })
+//   ).isRequired,
+// };
 
 export default DisplayBreeds;

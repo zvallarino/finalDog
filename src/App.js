@@ -9,8 +9,7 @@ import {
 } from '@material-ui/core';
 
 import { ThemeProvider } from "@material-ui/styles";
-
-import FetchBreeds from './components/FetchBreeds';
+import FetchBreedsZV from './components/FetchBreedsZV';
 
 function App() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -18,6 +17,12 @@ function App() {
   const theme = useMemo(() => createMuiTheme({
     palette: {
       type: prefersDarkMode ? 'dark' : 'light',
+      primary: {
+        main: "#4a90e2",
+      },
+      secondary: {
+        main: "#e2844a",
+      }
     },
   }), [prefersDarkMode]);
 
@@ -31,7 +36,8 @@ function App() {
             </Typography>
           </Toolbar>
         </AppBar>
-        <FetchBreeds />
+        {/* <FetchBreeds /> */}
+        <FetchBreedsZV />
       </Box>
     </ThemeProvider>
   );
